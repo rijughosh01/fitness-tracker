@@ -6,16 +6,15 @@ body {
   padding: 0;
 }
 
-h1,
-h2 {
+h1, h2 {
   color: #343a40;
 }
 
+/* Container styling */
 .container {
   padding: 20px;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
 }
 
@@ -26,8 +25,7 @@ form {
   gap: 10px;
 }
 
-input,
-button {
+input, button {
   padding: 10px;
   border-radius: 4px;
   border: 1px solid #ced4da;
@@ -58,19 +56,19 @@ button:hover {
   transform: scale(1.1);
 }
 
-.btn-primary,
-.btn-secondary {
+/* Primary and secondary button styles */
+.btn-primary, .btn-secondary {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   transition: background-color 0.3s, transform 0.3s ease-in-out;
 }
 
-.btn-primary:hover,
-.btn-secondary:hover {
+.btn-primary:hover, .btn-secondary:hover {
   background-color: #4682b4;
   transform: scale(1.05);
 }
 
+/* Form control styles */
 .form-control {
   padding: 0.75rem;
   font-size: 1rem;
@@ -117,7 +115,7 @@ li:last-child {
   text-align: center;
 }
 
-/* Margin and padding */
+/* Margin and padding utilities */
 .my-4 {
   margin: 1.5rem 0;
 }
@@ -126,7 +124,7 @@ li:last-child {
   padding: 0.5rem;
 }
 
-/* Root Container */
+/* Root container */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -134,7 +132,7 @@ li:last-child {
   text-align: center;
 }
 
-/* Navbar Styling */
+/* Navbar styling */
 .navbar {
   margin-bottom: 2rem;
 }
@@ -154,7 +152,7 @@ li:last-child {
   color: #0056b3;
 }
 
-/* Logo Styles */
+/* Logo styles */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -171,7 +169,7 @@ li:last-child {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-/* Keyframe Animations */
+/* Keyframe animations */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -187,10 +185,9 @@ li:last-child {
   }
 }
 
-/* Card Styles */
+/* Card styles */
 .card {
   padding: 2em;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
 }
@@ -199,7 +196,7 @@ li:last-child {
   transform: translateY(-5px);
 }
 
-/* Goal List Styles */
+/* Goal list styles */
 .goal-list-item {
   margin-bottom: 1rem;
   padding: 1em;
@@ -223,7 +220,7 @@ li:last-child {
   transform: translateY(-3px);
 }
 
-/* Dropdown Styles */
+/* Dropdown styles */
 .dropdown-toggle {
   display: inline-block;
   margin-top: 1rem;
@@ -269,7 +266,7 @@ li:last-child {
   }
 }
 
-/* Read the Docs Link */
+/* Read the Docs link */
 .read-the-docs {
   color: #888;
   transition: color 0.3s ease-in-out;
@@ -279,7 +276,7 @@ li:last-child {
   color: #333;
 }
 
-/* Card Header */
+/* Card header styles */
 .card-header {
   background-color: var(--primary-color);
   color: white;
@@ -288,7 +285,7 @@ li:last-child {
   font-size: 1.2rem;
 }
 
-/* Workout Plan Section */
+/* Workout plan section */
 .workout-plan {
   background-color: #e9ecef;
   border-radius: 10px;
@@ -308,9 +305,8 @@ li:last-child {
   margin-top: 0.5rem;
 }
 
-/* Button Styles */
-.btn-primary,
-.btn-secondary {
+/* Button styles */
+.btn-primary, .btn-secondary {
   background-color: #87ceeb;
   border-color: #87ceeb;
   padding: 0.45rem 1.5rem;
@@ -319,19 +315,18 @@ li:last-child {
   transition: background-color 0.3s, transform 0.3s ease-in-out;
 }
 
-.btn-primary:hover,
-.btn-secondary:hover {
+.btn-primary:hover, .btn-secondary:hover {
   background-color: #4682b4;
   transform: scale(1.05);
 }
 
-/* Form Styles */
+/* Form control styles */
 .form-control {
   padding: 0.75rem;
   font-size: 1rem;
 }
 
-/* List Item Styles */
+/* List item styles */
 .list-group-item {
   background-color: #f8f9fa;
   border: 1px solid #ced4da;
