@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API_URL = "https://api.openweathermap.org/data/2.5/weather";
-const API_KEY = "ca5f32c0475db6a51a059994fe0fa41b"; // Replace with your actual API key
+const API_KEY = "ca5f32c0475db6a51a059994fe0fa41b"; //API key for OpenWeatherMap
 
 export const getWeatherData = async (city) => {
   try {
@@ -9,7 +9,7 @@ export const getWeatherData = async (city) => {
       params: {
         q: city,
         appid: API_KEY,
-        units: "metric", // Use 'metric' for Celsius, 'imperial' for Fahrenheit
+        units: "metric", //units of measurement for temperature  
       },
     });
     return response.data;
