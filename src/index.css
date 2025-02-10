@@ -1,0 +1,347 @@
+/* Base styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  color: #343a40;
+}
+
+.container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+button {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+}
+
+button {
+  background-color: #87ceeb;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4682b4;
+}
+
+.btn-icon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-icon:hover {
+  transform: scale(1.1);
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: #4682b4;
+  transform: scale(1.05);
+}
+
+.form-control {
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+/* List styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ced4da;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+.list-group-item:hover {
+  background-color: #e2e6ea;
+  transform: scale(1.01);
+}
+
+.list-group-item span {
+  font-weight: bold;
+}
+
+/* Centered text */
+.text-center {
+  text-align: center;
+}
+
+/* Margin and padding */
+.my-4 {
+  margin: 1.5rem 0;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+/* Root Container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Navbar Styling */
+.navbar {
+  margin-bottom: 2rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.nav-link {
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #0056b3;
+}
+
+/* Logo Styles */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms, transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  transform: scale(1.1);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Keyframe Animations */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card Styles */
+.card {
+  padding: 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Goal List Styles */
+.goal-list-item {
+  margin-bottom: 1rem;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+.goal-list-item h5 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.goal-list-item p {
+  font-size: 1rem;
+}
+
+.goal-list-item:hover {
+  background-color: #e9ecef;
+  transform: translateY(-3px);
+}
+
+/* Dropdown Styles */
+.dropdown-toggle {
+  display: inline-block;
+  margin-top: 1rem;
+  transition: transform 0.3s, background-color 0.3s ease-in-out;
+}
+
+.dropdown-toggle:hover {
+  transform: scale(1.1);
+}
+
+.dropdown-menu {
+  border-radius: 10px;
+  animation: slideDown 0.5s ease-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInExpand {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-10%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Read the Docs Link */
+.read-the-docs {
+  color: #888;
+  transition: color 0.3s ease-in-out;
+}
+
+.read-the-docs:hover {
+  color: #333;
+}
+
+/* Card Header */
+.card-header {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 10px 10px 0 0;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Workout Plan Section */
+.workout-plan {
+  background-color: #e9ecef;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.workout-plan h2 {
+  font-size: 1.5rem;
+}
+
+.workout-plan .form-control {
+  margin-bottom: 1rem;
+}
+
+.workout-plan .btn {
+  margin-top: 0.5rem;
+}
+
+/* Button Styles */
+.btn-primary,
+.btn-secondary {
+  background-color: #87ceeb;
+  border-color: #87ceeb;
+  padding: 0.45rem 1.5rem;
+  margin: 1.1rem;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: #4682b4;
+  transform: scale(1.05);
+}
+
+/* Form Styles */
+.form-control {
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+/* List Item Styles */
+.list-group-item {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+.list-group-item:hover {
+  background-color: #e2e6ea;
+  transform: scale(1.01);
+}
